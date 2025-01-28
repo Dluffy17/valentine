@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" data-cbscriptallow="true">
 <head>
     <meta charset="utf-8">
@@ -16,7 +17,6 @@
     <meta name="next-size-adjust">
     <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" nomodule=""></script>
     <style>
-	
         @font-face {
             font-family: 'Roboto';
             font-style: normal;
@@ -31,9 +31,9 @@
             font-weight: 700;
             font-display: swap;
             src: local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
-		/* Add or update styles for Yes and No buttons */
+        /* Add or update styles for Yes and No buttons */
         #yesButton {
             background-color: #4CAF50; /* Green color */
             border: none;
@@ -85,12 +85,11 @@
             ];
 
             if (iterations < responses.length) {
-                valentineText.textContent = responses[iterations];
+                noButton.textContent = responses[iterations];
                 iterations++;
             } else {
-                valentineText.textContent = "Will you be my Valentine?";
+                noButton.textContent = "No";
                 iterations = 0;
-                yesButton.style.fontSize = `${16 + iterations * 2}px`;
             }
         }
 
